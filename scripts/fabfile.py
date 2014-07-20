@@ -60,7 +60,7 @@ def is_localhost(host=None):
 
   if '127.0.0.1' == host or 'localhost' == host:
     return True
-
+"""
   if host == os.getenv('HOSTNAME'):
     return True
 
@@ -68,7 +68,7 @@ def is_localhost(host=None):
     return True
     
   return False
-
+"""
 @wraps(run)
 def run_or_local(*args, **kargs):
   """
