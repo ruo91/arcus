@@ -98,7 +98,7 @@ case $MODULE in
       connections=$(get_json_element_value "$config_in_json" "connections")
 
       # start
-      $PKG_DIR/bin/memcached -E $PKG_DIR/lib/default_engine.so -X $PKG_DIR/lib/syslog_logger.so $PKG_DIR/lib/ascii_scrub.so -d -v -r -R5 -U 0 -b 8192 -m$memlimit -p $port -c $connections -t $threads -z $ZK_HOSTPORT
+      $PKG_DIR/bin/memcached -u memcached -E $PKG_DIR/lib/default_engine.so -X $PKG_DIR/lib/syslog_logger.so $PKG_DIR/lib/ascii_scrub.so -d -v -r -R5 -U 0 -b 8192 -m$memlimit -p $port -c $connections -t $threads -z $ZK_HOSTPORT
       ;;
 
       "stop")
