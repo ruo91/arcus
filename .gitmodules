@@ -7,3 +7,6 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/naver/arcus-memcached.git
+[submodule "zookeeper"]
+	path = zookeeper
+	url = https://github.com/naver/arcus-zookeeper
